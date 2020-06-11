@@ -5,7 +5,7 @@ module Lib where
 
 import           Control.Exception
 
-import qualified Data.ByteString.Char8 as BL
+import qualified Data.ByteString.Char8           as BL
 import qualified Data.ProtoLens.Message          as PLM
 import qualified Data.Text.Lazy                  as TL
 import qualified GRPC                            as R

@@ -1,41 +1,35 @@
-{-# LANGUAGE FlexibleInstances #-}
-{-# LANGUAGE UndecidableInstances #-}
+{-# LANGUAGE FlexibleInstances     #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
-{-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE OverloadedLabels #-}
-{-# LANGUAGE ScopedTypeVariables #-}
+{-# LANGUAGE OverloadedLabels      #-}
+{-# LANGUAGE OverloadedStrings     #-}
+{-# LANGUAGE ScopedTypeVariables   #-}
+{-# LANGUAGE UndecidableInstances  #-}
 
 module GRPC where
 
-import Data.Proxy
-import GHC.TypeLits
-import Network.GRPC.HTTP2.Types                 (IsRPC(..))
-import Network.GRPC.HTTP2.Encoding              ( GRPCInput(..)
-                                                , GRPCOutput(..)
-                                                , Compression(..)
-                                                , Decoder
-                                                ) 
-import           Lens.Micro                     ( (^.)
-                                                , (&)
-                                                , (.~)
-                                                )
-import Network.GRPC.HTTP2.Proto3Wire
-import Data.ProtoLens.Service.Types
-import Data.ProtoLens.Labels ()
-
-import qualified Data.Text.Lazy                 as TL
-
-import qualified Data.Monoid                    as MND
-import qualified Data.ByteString.Char8          as BS
+import           Data.ProtoLens.Labels         ()
+import           Data.ProtoLens.Service.Types
+import           Data.Proxy
+import           GHC.TypeLits
+import           Lens.Micro                    ((&), (.~), (^.))
+import           Network.GRPC.HTTP2.Encoding   (Compression (..), Decoder,
+                                                GRPCInput (..), GRPCOutput (..))
+import           Network.GRPC.HTTP2.Proto3Wire
+import           Network.GRPC.HTTP2.Types      (IsRPC (..))
 import           Proto3.Wire
-import qualified Proto3.Wire.Encode             as Enc
-import qualified Proto3.Wire.Decode             as Dec
-import qualified Data.ProtoLens.Message         as PLM
-import Proto.Protos.Grpcbin
-import Proto.Protos.Grpcbin_Fields
+
+import qualified Data.ByteString.Char8         as BS
+import qualified Data.Monoid                   as MND
+import qualified Data.ProtoLens.Message        as PLM
+import qualified Data.Text.Lazy                as TL
+import qualified Proto3.Wire.Decode            as Dec
+import qualified Proto3.Wire.Encode            as Enc
+
+import           Proto.Protos.Grpcbin
+import           Proto.Protos.Grpcbin_Fields
 
 createRPC :: String -> RPC
-createRPC = RPC packageName serviceName . BS.pack 
+createRPC = RPC packageName serviceName . BS.pack
   where
     serviceName = BS.pack $ symbolVal (Proxy :: Proxy (ServiceName LuxLogger))
     packageName = BS.pack $ symbolVal (Proxy :: Proxy (ServicePackage LuxLogger))
