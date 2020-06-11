@@ -4,7 +4,7 @@ mkdir -p gen
 mkdir -p gen-bin
 mkdir -p protos
 
-curl 'https://raw.githubusercontent.com/moul/pb/master/grpcbin/grpcbin.proto' > protos/grpcbin.proto
+# curl 'https://raw.githubusercontent.com/moul/pb/master/grpcbin/grpcbin.proto' > protos/grpcbin.proto
 
 stack install --local-bin-path=gen-bin proto-lens-protoc
 

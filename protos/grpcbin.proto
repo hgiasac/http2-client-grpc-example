@@ -1,0 +1,18 @@
+syntax = "proto3";
+package lux.logs;
+
+option go_package = ".;proto";
+
+service LuxLogger {
+  rpc SendLog (stream LogRequest) returns (stream LogResponse) {}
+}
+
+// The log request message
+message LogRequest {
+  bytes logs = 1;
+}
+
+// The log response message 
+message LogResponse {
+  string message = 1;
+}

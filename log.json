@@ -1,0 +1,602 @@
+{
+  "db_uid": "f7f17692-6394-483d-acdc-a6f1ae8625f3",
+  "instance_uid": "c1524161-c771-4415-b43f-8fb9890c0c9d",
+  "log_lines": [
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:01.343+07:00",
+      "detail": {
+        "request_id": "77214bae-a9d4-442a-8260-3638577de1bb",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:01.343+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 1.4381399e-2,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "77214bae-a9d4-442a-8260-3638577de1bb",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 1.0496e-5
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:01.343+07:00",
+      "detail": {
+        "request_id": "2c27697e-4e2c-4b4c-8c27-542f02c8ae18",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:01.343+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 3.267413e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "2c27697e-4e2c-4b4c-8c27-542f02c8ae18",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 7.13e-6
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:01.343+07:00",
+      "detail": {
+        "request_id": "e7d66312-6e4d-4fd8-ba57-8c47ca08a361",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:01.343+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 1.7169852e-2,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "e7d66312-6e4d-4fd8-ba57-8c47ca08a361",
+          "response_size": 98,
+          "client_name": "hasura-console",
+          "request_read_time": 9.998e-6
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "e7f98bc7-f02a-4b49-a5cd-33a9f8f9103e",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 9.957756e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "e7f98bc7-f02a-4b49-a5cd-33a9f8f9103e",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 8.469e-6
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "0eeb0be7-6d7b-4e55-b123-d10491e2cf1d",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 4.528173e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "0eeb0be7-6d7b-4e55-b123-d10491e2cf1d",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 6.564e-6
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "0c6a69c4-91c9-460f-b7fb-b9a4ba3e0d4c",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 7.564556e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "0c6a69c4-91c9-460f-b7fb-b9a4ba3e0d4c",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 1.682e-5
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "683ca766-5125-4be0-ac66-eb09da2d9578",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 2.643107e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "683ca766-5125-4be0-ac66-eb09da2d9578",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 7.235e-6
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "2931083d-ec72-4c45-9d71-52c7d660e5b1",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 7.051593e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "2931083d-ec72-4c45-9d71-52c7d660e5b1",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 1.0426e-5
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "a0a2817d-addc-465a-a544-8263d58d47e3",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 2.762635e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "a0a2817d-addc-465a-a544-8263d58d47e3",
+          "response_size": 99,
+          "client_name": "hasura-console",
+          "request_read_time": 6.395e-6
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "query-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "request_id": "e5988e67-0ba4-472d-8f70-8a322bf5f353",
+        "generated_sql": null,
+        "query": {
+          "operationName": "insertTest",
+          "query": "mutation insertTest {\n  insert_test(objects: {name: \"testsse\"}) {\n    affected_rows\n    returning {\n      id\n      name\n    }\n  }\n}\n"
+        }
+      }
+    },
+    {
+      "type": "http-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:46:02.381+07:00",
+      "detail": {
+        "operation": {
+          "query_execution_time": 6.47994e-3,
+          "user_vars": {
+            "x-hasura-role": "admin"
+          },
+          "request_id": "e5988e67-0ba4-472d-8f70-8a322bf5f353",
+          "response_size": 98,
+          "client_name": "hasura-console",
+          "request_read_time": 1.3552e-5
+        },
+        "http_info": {
+          "status": 200,
+          "request_headers": {
+            "Content-Type": "application/json",
+            "Origin": "http://localhost:3000",
+            "Sec-Fetch-Dest": "empty",
+            "Sec-Fetch-Site": "same-site",
+            "Accept": "*/*",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Sec-Fetch-Mode": "cors",
+            "Hasura-Client-Name": "hasura-console",
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36",
+            "Host": "localhost:8080",
+            "Content-Length": "201",
+            "Referer": "http://localhost:3000/console/api-explorer"
+          },
+          "http_version": "HTTP/1.1",
+          "url": "/v1/graphql",
+          "ip": "127.0.0.1",
+          "method": "POST",
+          "content_encoding": "gzip"
+        }
+      }
+    },
+    {
+      "type": "ws-server",
+      "level": "debug",
+      "timestamp": "2020-05-21T17:49:45.57+07:00",
+      "detail": {
+        "event": {
+          "type": "message_sent",
+          "detail": "{\"type\":\"ka\"}"
+        },
+        "websocket_id": "2920ca9d-b73e-4550-b63b-2c3a6033d1d4"
+      }
+    },
+    {
+      "type": "poller-log",
+      "level": "info",
+      "timestamp": "2020-05-21T17:49:45.57+07:00",
+      "detail": {
+        "live_query_options": {
+          "batch_size": 1,
+          "refetch_delay": 10
+        },
+        "execution_batches": [
+          {
+            "pg_execution_time": 1.258186e-3,
+            "batch_size": 1,
+            "push_cohorts_time": 8.605411e-3
+          }
+        ],
+        "poller_id": "7b2508c2-52c0-48be-af42-9dffe209b102",
+        "total_time": 1.009838e-2,
+        "generated_sql": "\n        select\n          _subs.result_id, _fld_resp.root as result\n          from\n            unnest(\n              $1::uuid[], $2::json[]\n            ) _subs (result_id, result_vars)\n          left outer join lateral\n            (\n        SELECT  coalesce(json_agg(\"root\" ), '[]' ) AS \"root\" FROM  (SELECT  row_to_json((SELECT  \"_1_e\"  FROM  (SELECT  \"_0_root.base\".\"name\" AS \"name\", \"_0_root.base\".\"id\" AS \"id\"       ) AS \"_1_e\"      ) ) AS \"root\" FROM  (SELECT  *  FROM \"public\".\"test\"  WHERE ('true')     ) AS \"_0_root.base\"     LIMIT 10 ) AS \"_2_root\"      \n            ) _fld_resp ON ('true')\n        ",
+        "snapshot_time": 6.02e-6,
+        "cohorts": [
+          {
+            "cohort_id": "3eabf2aa-871d-4434-901b-93f0cea22d86",
+            "response_size_bytes": 271,
+            "cohort_variables": {
+              "synthetic": [],
+              "query": {},
+              "session": {
+                "x-hasura-role": "admin"
+              }
+            },
+            "subscribers": [
+              {
+                "websocket_id": "2920ca9d-b73e-4550-b63b-2c3a6033d1d4",
+                "operation_id": "1"
+              }
+            ]
+          }
+        ],
+        "cohort_size": 1,
+        "execution_batch_size": 1,
+        "subscriber_count": 1
+      }
+    }
+  ]
+}
